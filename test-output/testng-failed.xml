@@ -6,7 +6,8 @@
       <class name="com.farm.qa.testcases.FarmAppTest">
         <methods>
           <include name="app_Launch"/>
-          <include name="goverment_Scheme"/>
+          <include name="settings_tab"/>
+          <include name="permission_popup"/>
         </methods>
       </class> <!-- com.farm.qa.testcases.FarmAppTest -->
     </classes>
