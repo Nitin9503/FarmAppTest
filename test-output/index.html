@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Sachin\AppData\Local\Temp\testng-eclipse-209838681\testng-customsuite.xml</span>
+                    <span>C:\Users\Sachin\AppData\Local\Temp\testng-eclipse--912220370\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,29 +102,15 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.farm.qa.testcases.FarmAppTest" hash-for-method="settings_tab">settings_tab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.farm.qa.testcases.FarmAppTest" hash-for-method="access_Weather_Details">access_Weather_Details</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.farm.qa.testcases.FarmAppTest" hash-for-method="chat_test">chat_test</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.farm.qa.testcases.FarmAppTest" hash-for-method="settings_tab">settings_tab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -144,18 +130,85 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="settings_tab">
-                  </a> <!-- settings_tab -->
-                  <span class="method-name">settings_tab</span>
+                  <a name="access_Weather_Details">
+                  </a> <!-- access_Weather_Details -->
+                  <span class="method-name">access_Weather_Details</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 50.13 seconds
+Command duration or timeout: 50.46 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
 System info: host: &apos;DESKTOP-A3DICO7&apos;, ip: &apos;169.254.89.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.climate.farmrise, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.14.101:5555, platform=LINUX, appActivity=com.climate.farmrise.SplashScreen, desired={appPackage=com.climate.farmrise, appActivity=com.climate.farmrise.SplashScreen, platformVersion=6.0.0, platformName=Android, udid=192.168.14.101:5555, deviceName=Emulator, newCammandTimeout=150}, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=192.168.14.101:5555, newCammandTimeout=150}]
-Session ID: d9f933d8-e8c8-4e88-b078-3bdab2a9c9f5
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Setting&apos;]}
+Session ID: fd64ee60-cb39-4163-87f8-179505b1ea6d
+*** Element info: {Using=id, value=content_box}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:420)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.farm.qa.testcases.FarmAppTest.access_Weather_Details(FarmAppTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="settings_tab">
+                  </a> <!-- settings_tab -->
+                  <span class="method-name">settings_tab</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50.51 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
+System info: host: &apos;DESKTOP-A3DICO7&apos;, ip: &apos;169.254.89.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.climate.farmrise, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.14.101:5555, platform=LINUX, appActivity=com.climate.farmrise.SplashScreen, desired={appPackage=com.climate.farmrise, appActivity=com.climate.farmrise.SplashScreen, platformVersion=6.0.0, platformName=Android, udid=192.168.14.101:5555, deviceName=Emulator, newCammandTimeout=150}, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=192.168.14.101:5555, newCammandTimeout=150}]
+Session ID: fd64ee60-cb39-4163-87f8-179505b1ea6d
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;More&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -179,7 +232,7 @@ Session ID: d9f933d8-e8c8-4e88-b078-3bdab2a9c9f5
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.farm.qa.testcases.FarmAppTest.settings_tab(FarmAppTest.java:215)
+	at com.farm.qa.testcases.FarmAppTest.settings_tab(FarmAppTest.java:239)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -211,32 +264,10 @@ Session ID: d9f933d8-e8c8-4e88-b078-3bdab2a9c9f5
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.farm.qa.testcases.FarmAppTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="access_Weather_Details">
-                  </a> <!-- access_Weather_Details -->
-                  <span class="method-name">access_Weather_Details</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="chat_test">
-                  </a> <!-- chat_test -->
-                  <span class="method-name">chat_test</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sachin\AppData\Local\Temp\testng-eclipse-209838681\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Sachin\AppData\Local\Temp\testng-eclipse--912220370\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -285,24 +316,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'chat_test')
+data.setCell(0, 1, 'access_Weather_Details')
 data.setCell(0, 2, 'com.farm.qa.testcases.FarmAppTest')
-data.setCell(0, 3, 123264);
+data.setCell(0, 3, 69764);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'settings_tab')
 data.setCell(1, 2, 'com.farm.qa.testcases.FarmAppTest')
-data.setCell(1, 3, 53393);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'access_Weather_Details')
-data.setCell(2, 2, 'com.farm.qa.testcases.FarmAppTest')
-data.setCell(2, 3, 19081);
+data.setCell(1, 3, 50510);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -335,25 +362,23 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">permission_popup</span>
-                <span class="method-start">22125 ms</span>
+                <span class="method-start">26628 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">access_Weather_Details</span>
-                <span class="method-start">72878 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">chat_test</span>
-                <span class="method-start">91982 ms</span>
+                <span class="method-start">77451 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">settings_tab</span>
-                <span class="method-start">215256 ms</span>
+                <span class="method-start">147277 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-</html>
+</
