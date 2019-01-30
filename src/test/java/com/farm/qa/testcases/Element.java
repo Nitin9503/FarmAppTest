@@ -18,12 +18,7 @@ public class Element {
 	 * }
 	 * 
 	 * 
-	 * WebElement agronomy_btn =driver.findElement(By.xpath(
-	 * "//android.widget.TextView[@text='Agronomy']")); WebElement mandi_btn
-	 * =driver.findElement(By.xpath("//android.widget.TextView[@text='Mandi']")) ;
-	 * 
-	 * WebElement cotton_btn
-	 * =driver.findElement(By.xpath("//android.widget.TextView[@text='Cotton']") );
+	
 	 * 
 	 */
 

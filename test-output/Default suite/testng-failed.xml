@@ -6,7 +6,6 @@
       <class name="com.farm.qa.testcases.FarmAppTest">
         <methods>
           <include name="app_Launch"/>
-          <include name="settings_tab"/>
           <include name="access_Weather_Details"/>
           <include name="permission_popup"/>
         </methods>

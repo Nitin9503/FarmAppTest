@@ -58,6 +58,23 @@ public class TestBase {
 			System.out.println("Permission popup is not displayed");
 
 		}
+		// Update popup
+		/*WebElement cancle_btn = driver.findElement(By.id("button2"));
+		cancle_btn.click();*/
+		WebElement select_lang = driver.findElement(By.xpath("//android.widget.TextView[@text='English']"));
+		select_lang.click();
+		WebElement procees_btn = driver.findElement(By.id("btn_Proceed"));
+		procees_btn.click();
+		WebElement agree_btn = driver.findElement(By.id("btn_agree"));
+		agree_btn.click();
+		// Five time clicks on Home Screen
+		for (int i = 0; i < 5; i++) {
+			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+			WebElement click_On_screen = driver.findElement(By.id("content_box"));
+			click_On_screen.click();
+
+		}
+
 	}
 
 }
