@@ -26,7 +26,7 @@ public class FarmAppTest extends TestBase {
 		Assert.assertEquals(weather_page_title, "Weather",
 				"Weather tab window is not displayed upon clicking on Check Weather button from home window");
 		System.out.println(weather_page_title);
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 7; i++) {
 			try {
 				if (driver.findElement(By.xpath("//android.widget.LinearLayout[@index='22']")).isDisplayed()) {
 					System.out.println("23 hours time colomn is displayed");

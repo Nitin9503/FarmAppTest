@@ -20,32 +20,37 @@ public class TestBase extends StartAppiumServer {
 	@BeforeTest
 	public void app_Launch() throws MalformedURLException, InterruptedException {
 	
+		//Test App on Android Emulator on Local machine 
 		startServer();
 		DesiredCapabilities caps = new DesiredCapabilities();
-		/*caps.setCapability("testobjectApiKey", "001657E41B8F4783B767469399C8F198");
-		caps.setCapability("deviceName", "Samsung Galaxy S6");
-		caps.setCapability("platformVersion", "7.0");
-		caps.setCapability("name", "Test on MototDevice");
-		caps.setCapability("fullReset", true)*/;
 		caps.setCapability("deviceName", "Emulator");
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("platformVersion", "6.0.0");
 		caps.setCapability("newCammandTimeout", "150");
 	 	caps.setCapability("fullReset", true);
 		caps.setCapability("udid", "192.168.14.101:5555");
-		// caps.setCapability("udid", "B3VNU17914100329");
+	   //caps.setCapability("udid", "B3VNU17914100329");
 		caps.setCapability("app", "E:\\Appium\\apk75\\FarmRise.apk");
-		//caps.setCapability("newCammandTimeout", "150");
 		caps.setCapability("appPackage", "com.climate.farmrise");
 		caps.setCapability("appActivity", "com.climate.farmrise.SplashScreen");
-		
 		Thread.sleep(900);
-		//driver = new AndroidDriver(new URL("https://us1.appium.testobject.com/wd/hub"), caps);
 		try {
 			driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
 		} catch (Exception e) {
 			driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), caps);
 		}
+		
+		//Test App on Real Device over Sauce lab
+		/*DesiredCapabilities caps = new DesiredCapabilities();
+		caps.setCapability("testobjectApiKey", "001657E41B8F4783B767469399C8F198");
+		caps.setCapability("deviceName", "Motorola Moto E2");
+		caps.setCapability("platformVersion", "5.1");
+		caps.setCapability("name", "Test on MototDevice");
+		caps.setCapability("newCammandTimeout", "150");
+	 	caps.setCapability("fullReset", true);
+		caps.setCapability("appPackage", "com.climate.farmrise");
+		caps.setCapability("appActivity", "com.climate.farmrise.SplashScreen");
+		driver = new AndroidDriver(new URL("https://us1.appium.testobject.com/wd/hub"), caps);*/	
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
 	}
@@ -93,7 +98,7 @@ public class TestBase extends StartAppiumServer {
 
 	@AfterTest
 	public void tearDown() throws InterruptedException {
-		stopServer();
+	//	stopServer();
 	}
 
 }

@@ -34,7 +34,7 @@ public class StartAppiumServer {
 		CommandLine cmd = new CommandLine("C:\\Program Files (x86)\\Appium\\node.exe");
 		cmd.addArgument("C:\\Program Files (x86)\\Appium\\node_modules\\appium\\bin\\Appium.js");
 		cmd.addArgument("--address");
-		cmd.addArgument("0.0.0.0");
+		cmd.addArgument("127.0.0.1");
 		cmd.addArgument("--port");
 		cmd.addArgument("4723");
 		System.out.println("start server2");
