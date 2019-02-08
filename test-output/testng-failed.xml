@@ -6,6 +6,12 @@
       <class name="com.farm.qa.testcases.FarmAppTest">
         <methods>
           <include name="app_Launch"/>
+          <include name="chat_test"/>
+          <include name="agronomy_test"/>
+          <include name="test_all_tabs"/>
+          <include name="tearDown"/>
+          <include name="settings_tab"/>
+          <include name="goverment_Scheme"/>
           <include name="access_Weather_Details"/>
           <include name="permission_popup"/>
         </methods>

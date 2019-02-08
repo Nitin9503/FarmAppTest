@@ -11,24 +11,36 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
+import AppiumSession.StartAppiumServer;
 import io.appium.java_client.android.AndroidDriver;
 
-public class TestBase {
-
+public class TestBase extends StartAppiumServer {
 	public static AndroidDriver driver;
 
 	@BeforeTest
-	public void app_Launch() throws MalformedURLException {
-
+	public void app_Launch() throws MalformedURLException, InterruptedException {
+	
+		startServer();
 		DesiredCapabilities caps = new DesiredCapabilities();
+		/*caps.setCapability("testobjectApiKey", "001657E41B8F4783B767469399C8F198");
+		caps.setCapability("deviceName", "Samsung Galaxy S6");
+		caps.setCapability("platformVersion", "7.0");
+		caps.setCapability("name", "Test on MototDevice");
+		caps.setCapability("fullReset", true)*/;
 		caps.setCapability("deviceName", "Emulator");
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("platformVersion", "6.0.0");
 		caps.setCapability("newCammandTimeout", "150");
+	 	caps.setCapability("fullReset", true);
 		caps.setCapability("udid", "192.168.14.101:5555");
 		// caps.setCapability("udid", "B3VNU17914100329");
+		caps.setCapability("app", "E:\\Appium\\apk75\\FarmRise.apk");
+		//caps.setCapability("newCammandTimeout", "150");
 		caps.setCapability("appPackage", "com.climate.farmrise");
 		caps.setCapability("appActivity", "com.climate.farmrise.SplashScreen");
+		
+		Thread.sleep(900);
+		//driver = new AndroidDriver(new URL("https://us1.appium.testobject.com/wd/hub"), caps);
 		try {
 			driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
 		} catch (Exception e) {
@@ -59,8 +71,10 @@ public class TestBase {
 
 		}
 		// Update popup
-		/*WebElement cancle_btn = driver.findElement(By.id("button2"));
-		cancle_btn.click();*/
+		/*
+		 * WebElement cancle_btn = driver.findElement(By.id("button2"));
+		 * cancle_btn.click();
+		 */
 		WebElement select_lang = driver.findElement(By.xpath("//android.widget.TextView[@text='English']"));
 		select_lang.click();
 		WebElement procees_btn = driver.findElement(By.id("btn_Proceed"));
@@ -75,6 +89,11 @@ public class TestBase {
 
 		}
 
+	}
+
+	@AfterTest
+	public void tearDown() throws InterruptedException {
+		stopServer();
 	}
 
 }

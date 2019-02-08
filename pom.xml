@@ -15,11 +15,11 @@
 	</properties>
 
 	<dependencies>
-<dependency>
-    <groupId>io.appium</groupId>
-    <artifactId>java-client</artifactId>
-    <version>5.0.0-BETA7</version>
-</dependency>
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>5.0.0-BETA7</version>
+		</dependency>
 
 		<dependency>
 			<groupId>commons-codec</groupId>
@@ -53,6 +53,18 @@
 			<artifactId>hamcrest-core</artifactId>
 			<version>1.3</version>
 			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
+		<dependency>
+			<groupId>commons-validator</groupId>
+			<artifactId>commons-validator</artifactId>
+			<version>1.6</version>
 		</dependency>
 
 		<dependency>

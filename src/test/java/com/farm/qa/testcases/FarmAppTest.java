@@ -19,6 +19,7 @@ public class FarmAppTest extends TestBase {
 	@Test(priority = 0)
 	public void access_Weather_Details() {
 		// Weather details scenario
+	
 		WebElement check_Weather_View_click = driver.findElement(By.id("checkWeatherView"));
 		check_Weather_View_click.click();
 		String weather_page_title = driver.findElement(By.id("weather_toolBar_Title")).getText();
@@ -182,10 +183,12 @@ public class FarmAppTest extends TestBase {
 				"Home page window is not displayed upon clicking on Home button");
 
 		System.out.println("Agronomy tab");
+	
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Agronomy']")).click();
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		Thread.sleep(800);
 		String agronomy_page_title = driver.findElement(By.xpath("//android.widget.TextView[@text='Agronomy']"))
 				.getText();
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		Assert.assertEquals(agronomy_page_title, "Agronomy",
 				"Agronomy page window is not displayed upon clicking on Agronomy button");
 

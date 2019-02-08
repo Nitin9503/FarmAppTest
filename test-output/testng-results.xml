@@ -1,28 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="234458" started-at="2019-01-30T12:14:15Z" finished-at="2019-01-30T12:18:10Z">
+  <suite name="Default suite" duration-ms="476129" started-at="2019-02-07T13:13:30Z" finished-at="2019-02-07T13:21:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="234458" started-at="2019-01-30T12:14:15Z" finished-at="2019-01-30T12:18:10Z">
+    <test name="Default test" duration-ms="476129" started-at="2019-02-07T13:13:30Z" finished-at="2019-02-07T13:21:26Z">
       <class name="com.farm.qa.testcases.FarmAppTest">
-        <test-method status="PASS" signature="app_Launch()[pri:0, instance:com.farm.qa.testcases.FarmAppTest@33723e30]" name="app_Launch" is-config="true" duration-ms="46439" started-at="2019-01-30T12:14:15Z" finished-at="2019-01-30T12:15:02Z">
+        <test-method status="PASS" signature="app_Launch()[pri:0, instance:com.farm.qa.testcases.FarmAppTest@c81cdd1]" name="app_Launch" is-config="true" duration-ms="46587" started-at="2019-02-07T13:13:30Z" finished-at="2019-02-07T13:14:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- app_Launch -->
-        <test-method status="PASS" signature="permission_popup()[pri:0, instance:com.farm.qa.testcases.FarmAppTest@33723e30]" name="permission_popup" is-config="true" duration-ms="74191" started-at="2019-01-30T12:15:02Z" finished-at="2019-01-30T12:16:16Z">
+        <test-method status="PASS" signature="permission_popup()[pri:0, instance:com.farm.qa.testcases.FarmAppTest@c81cdd1]" name="permission_popup" is-config="true" duration-ms="70262" started-at="2019-02-07T13:14:17Z" finished-at="2019-02-07T13:15:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- permission_popup -->
-        <test-method status="PASS" signature="goverment_Scheme()[pri:1, instance:com.farm.qa.testcases.FarmAppTest@33723e30]" name="goverment_Scheme" duration-ms="50230" started-at="2019-01-30T12:16:17Z" finished-at="2019-01-30T12:17:07Z">
+        <test-method status="PASS" signature="access_Weather_Details()[pri:0, instance:com.farm.qa.testcases.FarmAppTest@c81cdd1]" name="access_Weather_Details" duration-ms="124438" started-at="2019-02-07T13:15:27Z" finished-at="2019-02-07T13:17:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- access_Weather_Details -->
+        <test-method status="PASS" signature="goverment_Scheme()[pri:1, instance:com.farm.qa.testcases.FarmAppTest@c81cdd1]" name="goverment_Scheme" duration-ms="29292" started-at="2019-02-07T13:17:32Z" finished-at="2019-02-07T13:18:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goverment_Scheme -->
-        <test-method status="PASS" signature="agronomy_test()[pri:5, instance:com.farm.qa.testcases.FarmAppTest@33723e30]" name="agronomy_test" duration-ms="62780" started-at="2019-01-30T12:17:07Z" finished-at="2019-01-30T12:18:10Z">
+        <test-method status="PASS" signature="chat_test()[pri:2, instance:com.farm.qa.testcases.FarmAppTest@c81cdd1]" name="chat_test" duration-ms="97682" started-at="2019-02-07T13:18:01Z" finished-at="2019-02-07T13:19:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chat_test -->
+        <test-method status="PASS" signature="test_all_tabs()[pri:3, instance:com.farm.qa.testcases.FarmAppTest@c81cdd1]" name="test_all_tabs" duration-ms="23196" started-at="2019-02-07T13:19:39Z" finished-at="2019-02-07T13:20:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_all_tabs -->
+        <test-method status="PASS" signature="settings_tab()[pri:4, instance:com.farm.qa.testcases.FarmAppTest@c81cdd1]" name="settings_tab" duration-ms="12879" started-at="2019-02-07T13:20:02Z" finished-at="2019-02-07T13:20:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settings_tab -->
+        <test-method status="PASS" signature="agronomy_test()[pri:5, instance:com.farm.qa.testcases.FarmAppTest@c81cdd1]" name="agronomy_test" duration-ms="64141" started-at="2019-02-07T13:20:15Z" finished-at="2019-02-07T13:21:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agronomy_test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.farm.qa.testcases.FarmAppTest@c81cdd1]" name="tearDown" is-config="true" duration-ms="7401" started-at="2019-02-07T13:21:19Z" finished-at="2019-02-07T13:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.farm.qa.testcases.FarmAppTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
