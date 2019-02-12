@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Sachin\AppData\Local\Temp\testng-eclipse-845892055\testng-customsuite.xml</span>
+                    <span>C:\Users\Sachin\AppData\Local\Temp\testng-eclipse--1385080270\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -153,38 +153,23 @@
                   <a name="access_Weather_Details">
                   </a> <!-- access_Weather_Details -->
                   <span class="method-name">access_Weather_Details</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Appium unexpectedly ended the connection. It may have quit abnormally. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 95.86 seconds
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
 Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
 System info: host: &apos;DESKTOP-A3DICO7&apos;, ip: &apos;169.254.89.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{suppressKillServer=true, appPackage=com.climate.farmrise, testobject_user_id=sachin11, testobject_platform_name=Android, testobject_test_report_url=https://app.testobject.com/#/sachin11/farmrise/appium/executions/13, testobjectApiKey=001657E41B8F4783B767469399C8F198, testobject_device_name=Samsung Galaxy S6, testobject_device_session_id=a35846ae-5bbb-407f-8ff3-c83373c0c5be, deviceName=0416046a50912602, platform=LINUX, deviceUDID=0416046a50912602, testobject_test_report_id=13, desired={suppressKillServer=true, appPackage=com.climate.farmrise, testobject_platform_name=Android, testobject_test_name=Test on MototDevice, testobjectApiKey=001657E41B8F4783B767469399C8F198, testobject_device=Samsung Galaxy S6, adbPort=15017, deviceName=Samsung_Galaxy_S6_sjc_free, appActivity=com.climate.farmrise.SplashScreen, chromedriverChromeMappingFile=/root/.testobject_devices/work/chromedriver-mapping.json, name=Test on MototDevice, testobject_api_key=001657E41B8F4783B767469399C8F198, platformName=Android, chromedriverExecutableDir=/root/.testobject_devices/work/chromedrivers, newCammandTimeout=150, systemPort=8217}, platformVersion=7.0, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceManufacturer=samsung, chromedriverExecutableDir=/root/.testobject_devices/work/chromedrivers, newCammandTimeout=150, systemPort=8217, deviceScreenSize=1440x2560, deviceContextId=410510e6-25e4-46ff-935c-94f3674b031c, networkConnectionEnabled=true, testobject_test_name=Test on MototDevice, warnings={}, testobject_device=Samsung_Galaxy_S6_sjc_free, databaseEnabled=false, adbPort=15017, testobject_project_id=farmrise, appActivity=com.climate.farmrise.SplashScreen, testobject_test_report_api_url=https://app.testobject.com/api/rest/v2/reports/13, chromedriverChromeMappingFile=/root/.testobject_devices/work/chromedriver-mapping.json, locationContextEnabled=false, name=Test on MototDevice, testobject_api_key=001657E41B8F4783B767469399C8F198, deviceModel=SM-G920I, testobject_test_live_view_url=https://app.testobject.com/#/sachin11/farmrise/appium/view/13?dc=US}]
-Session ID: 80585c16-53a3-4706-a018-e5744927a637
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;English&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:177)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.farm.qa.base.TestBase.permission_popup(TestBase.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:112)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:73)
+	at com.farm.qa.base.TestBase.app_Launch(TestBase.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -194,10 +179,8 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -211,6 +194,36 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:142)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:88)
+	at io.appium.java_client.remote.AppiumProtocolHandShake.createSession(AppiumProtocolHandShake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandShake.createSession(AppiumProtocolHandShake.java:76)
+	at io.appium.java_client.remote.AppiumCommandExecutor.doExecute(AppiumCommandExecutor.java:111)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:162)
+	... 36 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 51 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -220,38 +233,23 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
                   <a name="agronomy_test">
                   </a> <!-- agronomy_test -->
                   <span class="method-name">agronomy_test</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Appium unexpectedly ended the connection. It may have quit abnormally. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 95.86 seconds
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
 Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
 System info: host: &apos;DESKTOP-A3DICO7&apos;, ip: &apos;169.254.89.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{suppressKillServer=true, appPackage=com.climate.farmrise, testobject_user_id=sachin11, testobject_platform_name=Android, testobject_test_report_url=https://app.testobject.com/#/sachin11/farmrise/appium/executions/13, testobjectApiKey=001657E41B8F4783B767469399C8F198, testobject_device_name=Samsung Galaxy S6, testobject_device_session_id=a35846ae-5bbb-407f-8ff3-c83373c0c5be, deviceName=0416046a50912602, platform=LINUX, deviceUDID=0416046a50912602, testobject_test_report_id=13, desired={suppressKillServer=true, appPackage=com.climate.farmrise, testobject_platform_name=Android, testobject_test_name=Test on MototDevice, testobjectApiKey=001657E41B8F4783B767469399C8F198, testobject_device=Samsung Galaxy S6, adbPort=15017, deviceName=Samsung_Galaxy_S6_sjc_free, appActivity=com.climate.farmrise.SplashScreen, chromedriverChromeMappingFile=/root/.testobject_devices/work/chromedriver-mapping.json, name=Test on MototDevice, testobject_api_key=001657E41B8F4783B767469399C8F198, platformName=Android, chromedriverExecutableDir=/root/.testobject_devices/work/chromedrivers, newCammandTimeout=150, systemPort=8217}, platformVersion=7.0, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceManufacturer=samsung, chromedriverExecutableDir=/root/.testobject_devices/work/chromedrivers, newCammandTimeout=150, systemPort=8217, deviceScreenSize=1440x2560, deviceContextId=410510e6-25e4-46ff-935c-94f3674b031c, networkConnectionEnabled=true, testobject_test_name=Test on MototDevice, warnings={}, testobject_device=Samsung_Galaxy_S6_sjc_free, databaseEnabled=false, adbPort=15017, testobject_project_id=farmrise, appActivity=com.climate.farmrise.SplashScreen, testobject_test_report_api_url=https://app.testobject.com/api/rest/v2/reports/13, chromedriverChromeMappingFile=/root/.testobject_devices/work/chromedriver-mapping.json, locationContextEnabled=false, name=Test on MototDevice, testobject_api_key=001657E41B8F4783B767469399C8F198, deviceModel=SM-G920I, testobject_test_live_view_url=https://app.testobject.com/#/sachin11/farmrise/appium/view/13?dc=US}]
-Session ID: 80585c16-53a3-4706-a018-e5744927a637
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;English&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:177)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.farm.qa.base.TestBase.permission_popup(TestBase.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:112)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:73)
+	at com.farm.qa.base.TestBase.app_Launch(TestBase.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -261,10 +259,8 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -278,6 +274,36 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:142)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:88)
+	at io.appium.java_client.remote.AppiumProtocolHandShake.createSession(AppiumProtocolHandShake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandShake.createSession(AppiumProtocolHandShake.java:76)
+	at io.appium.java_client.remote.AppiumCommandExecutor.doExecute(AppiumCommandExecutor.java:111)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:162)
+	... 36 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 51 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -287,38 +313,23 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
                   <a name="chat_test">
                   </a> <!-- chat_test -->
                   <span class="method-name">chat_test</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Appium unexpectedly ended the connection. It may have quit abnormally. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 95.86 seconds
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
 Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
 System info: host: &apos;DESKTOP-A3DICO7&apos;, ip: &apos;169.254.89.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{suppressKillServer=true, appPackage=com.climate.farmrise, testobject_user_id=sachin11, testobject_platform_name=Android, testobject_test_report_url=https://app.testobject.com/#/sachin11/farmrise/appium/executions/13, testobjectApiKey=001657E41B8F4783B767469399C8F198, testobject_device_name=Samsung Galaxy S6, testobject_device_session_id=a35846ae-5bbb-407f-8ff3-c83373c0c5be, deviceName=0416046a50912602, platform=LINUX, deviceUDID=0416046a50912602, testobject_test_report_id=13, desired={suppressKillServer=true, appPackage=com.climate.farmrise, testobject_platform_name=Android, testobject_test_name=Test on MototDevice, testobjectApiKey=001657E41B8F4783B767469399C8F198, testobject_device=Samsung Galaxy S6, adbPort=15017, deviceName=Samsung_Galaxy_S6_sjc_free, appActivity=com.climate.farmrise.SplashScreen, chromedriverChromeMappingFile=/root/.testobject_devices/work/chromedriver-mapping.json, name=Test on MototDevice, testobject_api_key=001657E41B8F4783B767469399C8F198, platformName=Android, chromedriverExecutableDir=/root/.testobject_devices/work/chromedrivers, newCammandTimeout=150, systemPort=8217}, platformVersion=7.0, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceManufacturer=samsung, chromedriverExecutableDir=/root/.testobject_devices/work/chromedrivers, newCammandTimeout=150, systemPort=8217, deviceScreenSize=1440x2560, deviceContextId=410510e6-25e4-46ff-935c-94f3674b031c, networkConnectionEnabled=true, testobject_test_name=Test on MototDevice, warnings={}, testobject_device=Samsung_Galaxy_S6_sjc_free, databaseEnabled=false, adbPort=15017, testobject_project_id=farmrise, appActivity=com.climate.farmrise.SplashScreen, testobject_test_report_api_url=https://app.testobject.com/api/rest/v2/reports/13, chromedriverChromeMappingFile=/root/.testobject_devices/work/chromedriver-mapping.json, locationContextEnabled=false, name=Test on MototDevice, testobject_api_key=001657E41B8F4783B767469399C8F198, deviceModel=SM-G920I, testobject_test_live_view_url=https://app.testobject.com/#/sachin11/farmrise/appium/view/13?dc=US}]
-Session ID: 80585c16-53a3-4706-a018-e5744927a637
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;English&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:177)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.farm.qa.base.TestBase.permission_popup(TestBase.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:112)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:73)
+	at com.farm.qa.base.TestBase.app_Launch(TestBase.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -328,10 +339,8 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -345,6 +354,36 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:142)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:88)
+	at io.appium.java_client.remote.AppiumProtocolHandShake.createSession(AppiumProtocolHandShake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandShake.createSession(AppiumProtocolHandShake.java:76)
+	at io.appium.java_client.remote.AppiumCommandExecutor.doExecute(AppiumCommandExecutor.java:111)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:162)
+	... 36 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 51 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -354,38 +393,23 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
                   <a name="goverment_Scheme">
                   </a> <!-- goverment_Scheme -->
                   <span class="method-name">goverment_Scheme</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Appium unexpectedly ended the connection. It may have quit abnormally. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 95.86 seconds
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
 Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
 System info: host: &apos;DESKTOP-A3DICO7&apos;, ip: &apos;169.254.89.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{suppressKillServer=true, appPackage=com.climate.farmrise, testobject_user_id=sachin11, testobject_platform_name=Android, testobject_test_report_url=https://app.testobject.com/#/sachin11/farmrise/appium/executions/13, testobjectApiKey=001657E41B8F4783B767469399C8F198, testobject_device_name=Samsung Galaxy S6, testobject_device_session_id=a35846ae-5bbb-407f-8ff3-c83373c0c5be, deviceName=0416046a50912602, platform=LINUX, deviceUDID=0416046a50912602, testobject_test_report_id=13, desired={suppressKillServer=true, appPackage=com.climate.farmrise, testobject_platform_name=Android, testobject_test_name=Test on MototDevice, testobjectApiKey=001657E41B8F4783B767469399C8F198, testobject_device=Samsung Galaxy S6, adbPort=15017, deviceName=Samsung_Galaxy_S6_sjc_free, appActivity=com.climate.farmrise.SplashScreen, chromedriverChromeMappingFile=/root/.testobject_devices/work/chromedriver-mapping.json, name=Test on MototDevice, testobject_api_key=001657E41B8F4783B767469399C8F198, platformName=Android, chromedriverExecutableDir=/root/.testobject_devices/work/chromedrivers, newCammandTimeout=150, systemPort=8217}, platformVersion=7.0, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceManufacturer=samsung, chromedriverExecutableDir=/root/.testobject_devices/work/chromedrivers, newCammandTimeout=150, systemPort=8217, deviceScreenSize=1440x2560, deviceContextId=410510e6-25e4-46ff-935c-94f3674b031c, networkConnectionEnabled=true, testobject_test_name=Test on MototDevice, warnings={}, testobject_device=Samsung_Galaxy_S6_sjc_free, databaseEnabled=false, adbPort=15017, testobject_project_id=farmrise, appActivity=com.climate.farmrise.SplashScreen, testobject_test_report_api_url=https://app.testobject.com/api/rest/v2/reports/13, chromedriverChromeMappingFile=/root/.testobject_devices/work/chromedriver-mapping.json, locationContextEnabled=false, name=Test on MototDevice, testobject_api_key=001657E41B8F4783B767469399C8F198, deviceModel=SM-G920I, testobject_test_live_view_url=https://app.testobject.com/#/sachin11/farmrise/appium/view/13?dc=US}]
-Session ID: 80585c16-53a3-4706-a018-e5744927a637
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;English&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:177)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.farm.qa.base.TestBase.permission_popup(TestBase.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:112)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:73)
+	at com.farm.qa.base.TestBase.app_Launch(TestBase.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -395,10 +419,8 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -412,6 +434,36 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:142)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:88)
+	at io.appium.java_client.remote.AppiumProtocolHandShake.createSession(AppiumProtocolHandShake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandShake.createSession(AppiumProtocolHandShake.java:76)
+	at io.appium.java_client.remote.AppiumCommandExecutor.doExecute(AppiumCommandExecutor.java:111)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:162)
+	... 36 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 51 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -421,38 +473,23 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
                   <a name="settings_tab">
                   </a> <!-- settings_tab -->
                   <span class="method-name">settings_tab</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Appium unexpectedly ended the connection. It may have quit abnormally. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 95.86 seconds
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
 Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
 System info: host: &apos;DESKTOP-A3DICO7&apos;, ip: &apos;169.254.89.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{suppressKillServer=true, appPackage=com.climate.farmrise, testobject_user_id=sachin11, testobject_platform_name=Android, testobject_test_report_url=https://app.testobject.com/#/sachin11/farmrise/appium/executions/13, testobjectApiKey=001657E41B8F4783B767469399C8F198, testobject_device_name=Samsung Galaxy S6, testobject_device_session_id=a35846ae-5bbb-407f-8ff3-c83373c0c5be, deviceName=0416046a50912602, platform=LINUX, deviceUDID=0416046a50912602, testobject_test_report_id=13, desired={suppressKillServer=true, appPackage=com.climate.farmrise, testobject_platform_name=Android, testobject_test_name=Test on MototDevice, testobjectApiKey=001657E41B8F4783B767469399C8F198, testobject_device=Samsung Galaxy S6, adbPort=15017, deviceName=Samsung_Galaxy_S6_sjc_free, appActivity=com.climate.farmrise.SplashScreen, chromedriverChromeMappingFile=/root/.testobject_devices/work/chromedriver-mapping.json, name=Test on MototDevice, testobject_api_key=001657E41B8F4783B767469399C8F198, platformName=Android, chromedriverExecutableDir=/root/.testobject_devices/work/chromedrivers, newCammandTimeout=150, systemPort=8217}, platformVersion=7.0, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceManufacturer=samsung, chromedriverExecutableDir=/root/.testobject_devices/work/chromedrivers, newCammandTimeout=150, systemPort=8217, deviceScreenSize=1440x2560, deviceContextId=410510e6-25e4-46ff-935c-94f3674b031c, networkConnectionEnabled=true, testobject_test_name=Test on MototDevice, warnings={}, testobject_device=Samsung_Galaxy_S6_sjc_free, databaseEnabled=false, adbPort=15017, testobject_project_id=farmrise, appActivity=com.climate.farmrise.SplashScreen, testobject_test_report_api_url=https://app.testobject.com/api/rest/v2/reports/13, chromedriverChromeMappingFile=/root/.testobject_devices/work/chromedriver-mapping.json, locationContextEnabled=false, name=Test on MototDevice, testobject_api_key=001657E41B8F4783B767469399C8F198, deviceModel=SM-G920I, testobject_test_live_view_url=https://app.testobject.com/#/sachin11/farmrise/appium/view/13?dc=US}]
-Session ID: 80585c16-53a3-4706-a018-e5744927a637
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;English&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:177)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.farm.qa.base.TestBase.permission_popup(TestBase.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:112)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:73)
+	at com.farm.qa.base.TestBase.app_Launch(TestBase.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -462,10 +499,8 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -479,6 +514,36 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:142)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:88)
+	at io.appium.java_client.remote.AppiumProtocolHandShake.createSession(AppiumProtocolHandShake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandShake.createSession(AppiumProtocolHandShake.java:76)
+	at io.appium.java_client.remote.AppiumCommandExecutor.doExecute(AppiumCommandExecutor.java:111)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:162)
+	... 36 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 51 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -488,38 +553,23 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
                   <a name="test_all_tabs">
                   </a> <!-- test_all_tabs -->
                   <span class="method-name">test_all_tabs</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Appium unexpectedly ended the connection. It may have quit abnormally. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 95.86 seconds
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
 Build info: version: &apos;3.3.1&apos;, revision: &apos;5234b325d5&apos;, time: &apos;2017-03-10 09:10:29 +0000&apos;
 System info: host: &apos;DESKTOP-A3DICO7&apos;, ip: &apos;169.254.89.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{suppressKillServer=true, appPackage=com.climate.farmrise, testobject_user_id=sachin11, testobject_platform_name=Android, testobject_test_report_url=https://app.testobject.com/#/sachin11/farmrise/appium/executions/13, testobjectApiKey=001657E41B8F4783B767469399C8F198, testobject_device_name=Samsung Galaxy S6, testobject_device_session_id=a35846ae-5bbb-407f-8ff3-c83373c0c5be, deviceName=0416046a50912602, platform=LINUX, deviceUDID=0416046a50912602, testobject_test_report_id=13, desired={suppressKillServer=true, appPackage=com.climate.farmrise, testobject_platform_name=Android, testobject_test_name=Test on MototDevice, testobjectApiKey=001657E41B8F4783B767469399C8F198, testobject_device=Samsung Galaxy S6, adbPort=15017, deviceName=Samsung_Galaxy_S6_sjc_free, appActivity=com.climate.farmrise.SplashScreen, chromedriverChromeMappingFile=/root/.testobject_devices/work/chromedriver-mapping.json, name=Test on MototDevice, testobject_api_key=001657E41B8F4783B767469399C8F198, platformName=Android, chromedriverExecutableDir=/root/.testobject_devices/work/chromedrivers, newCammandTimeout=150, systemPort=8217}, platformVersion=7.0, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceManufacturer=samsung, chromedriverExecutableDir=/root/.testobject_devices/work/chromedrivers, newCammandTimeout=150, systemPort=8217, deviceScreenSize=1440x2560, deviceContextId=410510e6-25e4-46ff-935c-94f3674b031c, networkConnectionEnabled=true, testobject_test_name=Test on MototDevice, warnings={}, testobject_device=Samsung_Galaxy_S6_sjc_free, databaseEnabled=false, adbPort=15017, testobject_project_id=farmrise, appActivity=com.climate.farmrise.SplashScreen, testobject_test_report_api_url=https://app.testobject.com/api/rest/v2/reports/13, chromedriverChromeMappingFile=/root/.testobject_devices/work/chromedriver-mapping.json, locationContextEnabled=false, name=Test on MototDevice, testobject_api_key=001657E41B8F4783B767469399C8F198, deviceModel=SM-G920I, testobject_test_live_view_url=https://app.testobject.com/#/sachin11/farmrise/appium/view/13?dc=US}]
-Session ID: 80585c16-53a3-4706-a018-e5744927a637
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;English&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:177)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.farm.qa.base.TestBase.permission_popup(TestBase.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:112)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:73)
+	at com.farm.qa.base.TestBase.app_Launch(TestBase.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -529,10 +579,8 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -546,6 +594,36 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:142)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:88)
+	at io.appium.java_client.remote.AppiumProtocolHandShake.createSession(AppiumProtocolHandShake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandShake.createSession(AppiumProtocolHandShake.java:76)
+	at io.appium.java_client.remote.AppiumCommandExecutor.doExecute(AppiumCommandExecutor.java:111)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:162)
+	... 36 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 51 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -555,7 +633,7 @@ Session ID: 80585c16-53a3-4706-a018-e5744927a637
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sachin\AppData\Local\Temp\testng-eclipse-845892055\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Sachin\AppData\Local\Temp\testng-eclipse--1385080270\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -606,27 +684,27 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'chat_test')
+data.setCell(0, 1, 'agronomy_test')
 data.setCell(0, 2, 'com.farm.qa.testcases.FarmAppTest')
 data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'goverment_Scheme')
+data.setCell(1, 1, 'chat_test')
 data.setCell(1, 2, 'com.farm.qa.testcases.FarmAppTest')
 data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'access_Weather_Details')
+data.setCell(2, 1, 'goverment_Scheme')
 data.setCell(2, 2, 'com.farm.qa.testcases.FarmAppTest')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'settings_tab')
+data.setCell(3, 1, 'test_all_tabs')
 data.setCell(3, 2, 'com.farm.qa.testcases.FarmAppTest')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test_all_tabs')
+data.setCell(4, 1, 'settings_tab')
 data.setCell(4, 2, 'com.farm.qa.testcases.FarmAppTest')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'agronomy_test')
+data.setCell(5, 1, 'access_Weather_Details')
 data.setCell(5, 2, 'com.farm.qa.testcases.FarmAppTest')
 data.setCell(5, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
@@ -661,38 +739,34 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.farm.qa.testcases.FarmAppTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">app_Launch</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">permission_popup</span>
-                <span class="method-start">66350 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">access_Weather_Details</span>
-                <span class="method-start">-1549611224894 ms</span>
+                <span class="method-start">-1549970494690 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">goverment_Scheme</span>
-                <span class="method-start">-1549611224894 ms</span>
+                <span class="method-start">-1549970494690 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">chat_test</span>
-                <span class="method-start">-1549611224894 ms</span>
+                <span class="method-start">-1549970494690 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_all_tabs</span>
-                <span class="method-start">-1549611224894 ms</span>
+                <span class="method-start">-1549970494690 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">settings_tab</span>
-                <span class="method-start">-1549611224894 ms</span>
+                <span class="method-start">-1549970494690 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">agronomy_test</span>
-                <span class="method-start">-1549611224894 ms</span>
+                <span class="method-start">-1549970494690 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

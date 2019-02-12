@@ -1,5 +1,6 @@
 package com.farm.qa.base;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -18,10 +19,23 @@ public class TestBase extends StartAppiumServer {
 	public static AndroidDriver driver;
 
 	@BeforeTest
-	public void app_Launch() throws MalformedURLException, InterruptedException {
+	public void app_Launch() throws InterruptedException, IOException {
 	
 		//Test App on Android Emulator on Local machine 
-		startServer();
+		//Runtime rt = Runtime.getRuntime();
+	//	String new_dir = "C:\\Users\\nikhil.sonawane\\Desktop";	
+	//	rt.exec("cmd.exe /c cd \""+new_dir+"\" & start cmd.exe /k \"startappium.bat\"");
+		
+		
+		String userDir = System.getProperty("user.dir");
+		System.out.println(userDir);
+		Runtime runtime = Runtime.getRuntime();
+		String new_dir = userDir+"\\AppiumBatFile";
+		runtime.exec("cmd.exe /c cd \""+new_dir+"\" & start cmd.exe /k \"startappium.bat\"");
+		Thread.sleep(90000);
+		
+		
+		
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("deviceName", "Emulator");
 		caps.setCapability("platformName", "Android");
@@ -98,7 +112,7 @@ public class TestBase extends StartAppiumServer {
 
 	@AfterTest
 	public void tearDown() throws InterruptedException {
-	//	stopServer();
-	}
+	
 
+}
 }

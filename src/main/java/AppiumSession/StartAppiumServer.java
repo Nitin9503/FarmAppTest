@@ -29,12 +29,29 @@ import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 public class StartAppiumServer {
 	
-	public static void  startServer() throws MalformedURLException {
-		System.out.println("start server1");
+	public static void  startServer() throws IOException, InterruptedException {
+		
+		// C:\Users\Sachin\Desktop>startappium.bat
+			
+	//  for window machine bellow is the command for launch termninal
+	         Process p1 = Runtime.getRuntime().exec("cmd.exe /c start cd \"Desktop\\startappium.bat");
+		    // System.out.println("Launched CMD window");
+		
+		Thread.sleep(500);
+		
+		//runtime.exec("cmd / c start C:\\Users\\Sachin\\Desktop\\startappium.bat");
+	
+		
+		
+		
+		
+		
+		
+	/*	System.out.println("start server1");
 		CommandLine cmd = new CommandLine("C:\\Program Files (x86)\\Appium\\node.exe");
 		cmd.addArgument("C:\\Program Files (x86)\\Appium\\node_modules\\appium\\bin\\Appium.js");
 		cmd.addArgument("--address");
-		cmd.addArgument("127.0.0.1");
+		cmd.addArgument("0.0.0.0");
 		cmd.addArgument("--port");
 		cmd.addArgument("4723");
 		System.out.println("start server2");
@@ -60,6 +77,8 @@ public class StartAppiumServer {
 		}
 		System.out.println("stop server2");
 		Thread.sleep(7000);
-	}
+	}*/
+		
 
+}
 }
