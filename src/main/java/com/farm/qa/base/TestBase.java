@@ -21,16 +21,17 @@ public class TestBase extends StartAppiumServer {
 	public void app_Launch() throws MalformedURLException, InterruptedException {
 	
 		//Test App on Android Emulator on Local machine 
-		startServer();
+		//startServer();
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("deviceName", "Emulator");
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("platformVersion", "6.0.0");
-		caps.setCapability("newCammandTimeout", "150");
+		caps.setCapability("newCammandTimeout", "60");
 	 	caps.setCapability("fullReset", true);
-		caps.setCapability("udid", "192.168.14.101:5555");
+		caps.setCapability("udid", "192.168.14.101:5555"); 
+		caps.setCapability("udid", "192.168.56.101:5555");
 	   //caps.setCapability("udid", "B3VNU17914100329");
-		caps.setCapability("app", "E:\\Appium\\apk75\\FarmRise.apk");
+		//caps.setCapability("app", "E:\\Appium\\apk75\\FarmRise.apk");
 		caps.setCapability("appPackage", "com.climate.farmrise");
 		caps.setCapability("appActivity", "com.climate.farmrise.SplashScreen");
 		Thread.sleep(900);
@@ -57,9 +58,9 @@ public class TestBase extends StartAppiumServer {
 
 	@BeforeClass
 	public void permission_popup() {
+		// we can use boolean true 
 		try {
-
-			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			String title = driver.findElement(By.id("com.android.packageinstaller:id/permission_message")).getText();
 			System.out.println(title);
 			if (driver.findElement(By.id("com.android.packageinstaller:id/permission_message")).isDisplayed()) {
@@ -68,7 +69,6 @@ public class TestBase extends StartAppiumServer {
 						.findElement(By.id("com.android.packageinstaller:id/permission_message"));
 				permission_btn.click();
 				permission_btn.click();
-
 			}
 		} catch (Exception e) {
 

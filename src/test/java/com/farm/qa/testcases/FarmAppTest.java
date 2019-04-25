@@ -19,7 +19,6 @@ public class FarmAppTest extends TestBase {
 	@Test(priority = 0)
 	public void access_Weather_Details() {
 		// Weather details scenario
-	
 		WebElement check_Weather_View_click = driver.findElement(By.id("checkWeatherView"));
 		check_Weather_View_click.click();
 		String weather_page_title = driver.findElement(By.id("weather_toolBar_Title")).getText();
@@ -84,8 +83,9 @@ public class FarmAppTest extends TestBase {
 		 * getText(); System.out.println("no_scheme_msg==>" + no_scheme_msg);
 		 */
 		for (int i = 0; i < 5; i++) {
-		
-			TestUtil.scrollUp((WebElement) driver.findElements(By.id("com.climate.farmrise:id/recyclerView")).get(0), driver.findElement(By.id("com.climate.farmrise:id/recyclerView")).getSize(), 0.80, 0.20, 2);
+
+			TestUtil.scrollUp(driver.findElement(By.id("com.climate.farmrise:id/recyclerView")),
+					driver.findElement(By.id("com.climate.farmrise:id/recyclerView")).getSize(), 0.80, 0.20, 2);
 
 		}
 
@@ -183,7 +183,7 @@ public class FarmAppTest extends TestBase {
 				"Home page window is not displayed upon clicking on Home button");
 
 		System.out.println("Agronomy tab");
-	
+
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Agronomy']")).click();
 		Thread.sleep(800);
 		String agronomy_page_title = driver.findElement(By.xpath("//android.widget.TextView[@text='Agronomy']"))
@@ -234,7 +234,6 @@ public class FarmAppTest extends TestBase {
 		System.out.println("code ended");
 	}
 
-	
 	@Test(priority = 5)
 	public void agronomy_test() {
 
@@ -274,10 +273,12 @@ public class FarmAppTest extends TestBase {
 				System.out.println("Irrigation tab not is displayed");
 			}
 			System.out.println("Scrolling started");
-			
-			TestUtil.scrollUp((WebElement) driver.findElements(By.id("com.climate.farmrise:id/subStageNestedScrollView")).get(0), driver.findElement(By.id("com.climate.farmrise:id/subStageNestedScrollView")).getSize(), 0.80, 0.20, 2);
 
-			
+			TestUtil.scrollUp(
+					(WebElement) driver.findElements(By.id("com.climate.farmrise:id/subStageNestedScrollView")).get(0),
+					driver.findElement(By.id("com.climate.farmrise:id/subStageNestedScrollView")).getSize(), 0.80, 0.20,
+					2);
+
 		}
 
 	}
