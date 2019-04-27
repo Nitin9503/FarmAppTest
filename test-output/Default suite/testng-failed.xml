@@ -3,15 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.farm.qa.testcases.FarmAppTest">
+      <class name="com.farm.qa.base.Assertpractice">
         <methods>
-          <include name="app_Launch"/>
-          <include name="test_all_tabs"/>
-          <include name="tearDown"/>
-          <include name="goverment_Scheme"/>
-          <include name="permission_popup"/>
+          <include name="test1"/>
+          <include name="test0"/>
         </methods>
-      </class> <!-- com.farm.qa.testcases.FarmAppTest -->
+      </class> <!-- com.farm.qa.base.Assertpractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

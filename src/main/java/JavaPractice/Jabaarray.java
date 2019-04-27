@@ -47,7 +47,7 @@ public class Jabaarray {
 	
 		System.out.println("array value1==>" +name3[0]);	 
 		Object name2[] = {"Sachin", 10, "patil", 'A'};
-		
+			
 		System.out.println("array value==>" +name2[0]);
 		for (int j=0 ; j<name2.length; j++){
 			System.out.println("array value==>" +name2[j]);
