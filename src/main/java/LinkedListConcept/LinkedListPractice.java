@@ -1,7 +1,10 @@
 package LinkedListConcept;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
+
+
 
 public class LinkedListPractice {
 
@@ -92,6 +95,33 @@ public class LinkedListPractice {
 			System.out.println("value  ==>" + it.next());
 		}
 
+		System.out.println("************** Linkedlist value using user defined class  **************");
+		
+		LinkedList<Employee> li5 = new LinkedList<Employee>();
+		
+		Employee emp1 = new Employee("Sachin", 10, 10.10);
+		Employee emp2 = new Employee("Kiran", 11, 20.10);
+		Employee emp3 = new Employee("Mayur", 12, 30.10);
+		li5.add(emp1);
+		li5.add(emp2);
+		li5.add(emp3);
+	
+		Iterator<Employee> it1 = li5.iterator();
+		
+		
+		System.out.println("************** Linkedlist value using user defined class  **************");
+		while(it1.hasNext()){
+			System.out.println("************** Linkedlist value using user defined class  **************");
+		Employee emp = it1.next();
+		System.out.println(emp.name);
+		System.out.println(emp.rollNo);	
+		System.out.println(emp.percentage);
+
+		}
+		
+		
+		
+		
 	}
 
 }
