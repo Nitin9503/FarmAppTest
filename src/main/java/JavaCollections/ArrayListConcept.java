@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 
-public class ListConcept {
+public class ArrayListConcept {
 
 	public static void main(String args[]) {
-		int name[] = new int[3];			  	// This is static array where is fixed, we can not add / remove the value once we defined size.To overcome this problem we go for Dynamic array.											
+		int name[] = new int[3];			  	// This is static array where is size fixed, we can not add / remove the value once we defined size.To overcome this problem we go for Dynamic array.											
 													 
 
 		ArrayList ar = new ArrayList(); 			// It is non generic array which support // before java 1.5 , In non generic array we can add any data type value as String , Integer ,
@@ -41,6 +41,9 @@ public class ListConcept {
 			
 			System.out.println("Print value one by one==>" +ar.get(i));
 		}
+		for( Object st :ar){
+			System.out.println("(New )Print value one by one==>" +st);
+		}
 		ar.set(0, 20);
 		ar.set(1, 10);
 		ar.set(2, 30);
@@ -62,7 +65,7 @@ public class ListConcept {
 	//	ArrayList<E> ar4 = new ArrayList<E>();  // To store any data value 
 	
 		
-		// Emplyee class object 
+		// Employee class object 
 		
 		Employee emp1 = new Employee("Mukesh", 21, 60.60);   // How to store user defined class in array list
 		Employee emp2 = new Employee("Rakesh", 42, 61.60); 
@@ -86,6 +89,18 @@ public class ListConcept {
 		
 		System.out.println("********************************");
 		
+		System.out.println("********************************");
+		for(Employee em : ar5){
+			System.out.println(em.name);
+			System.out.println(em.rollNo);
+			System.out.println(em.percentage);
+			
+		}
+		
+		System.out.println("********************************");
+		
+		System.out.println("********************************");
+		
 		ArrayList<String> ar1 = new ArrayList<String>();  // This arraylist is generic where parametrized the data type , Now String data type value can be added.
 		ar1.add("Rohit");
 		ar1.add("Testing");
@@ -98,6 +113,7 @@ public class ListConcept {
 		}
 		
 		Collections.sort(ar1);
+		System.out.println("**************** Collections ****************");
 		for (String i: ar1){     //Print the value from array using for each loop
 			System.out.println("Print the value using for each loop==>" +i);
 			
@@ -138,9 +154,21 @@ public class ListConcept {
 			System.out.println("Print the value using for each loop==>" +i);
 			
 		}
-		System.out.println("********************************");
-		ar2.retainAll(ar3);                    //   The use of this ar2.retainAll(ar3) method to find common value from both array.                                                                                                                                                                         
-		for (int i: ar2){     //Print the value from array using for each loop
+		System.out.println("**************  retainAll ******************");
+		
+		ArrayList<Integer> ar6 = new ArrayList<Integer>();
+		ArrayList<Integer> ar7 = new ArrayList<Integer>();
+		ar6.add(100);
+		ar6.add(200);
+		ar6.add(300);
+		ar6.add(400);
+	
+		ar7.add(800);
+		ar7.add(900);
+		ar7.add(1100);
+		ar7.add(400);
+		ar6.retainAll(ar7);                    //   The use of this ar2.retainAll(ar3) method to find common value from both array.                                                                                                                                                                         
+		for (int i: ar6){     //Print the value from array using for each loop
 			System.out.println("Print the value using for each loop==>" +i);
 			
 		}

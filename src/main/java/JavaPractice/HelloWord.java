@@ -7,6 +7,11 @@ public class HelloWord {
 	// Run  java MyClass 
 	public static void main(String [] args){
 		
+		
+
+		
+		
+		
 		String firstName = "Sachin"; // declaration , intilazation
 		String lastName = "Patil";
 		String fullName = firstName + " " +  lastName ;
