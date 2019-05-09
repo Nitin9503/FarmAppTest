@@ -7,6 +7,7 @@ import java.util.Iterator;
 public class ArrayListConcept {
 
 	public static void main(String args[]) {
+		
 		int name[] = new int[3];			  	// This is static array where is size fixed, we can not add / remove the value once we defined size.To overcome this problem we go for Dynamic array.											
 													 
 
