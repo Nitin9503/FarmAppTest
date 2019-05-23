@@ -4,6 +4,8 @@ public class Practicestring {
 	
 	public static void main (String args[]){
 		
+		
+	
 		String name = "Jalgaon";
 		int len = name.length();
 		

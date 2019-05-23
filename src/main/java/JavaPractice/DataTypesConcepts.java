@@ -2,6 +2,8 @@ package JavaPractice;
 
 public class DataTypesConcepts {
 
+
+	
 	public static void main(String[] args) {
 
 		//There are two types of data types ie. primitive and non primitive
