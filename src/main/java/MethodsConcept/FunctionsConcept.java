@@ -25,11 +25,13 @@ public class FunctionsConcept {
 	
 	
 	public void test(){// no input and no output method
+		 
 		System.out.println("test method");
 	}
 	
 
-	public int pqr(){	 
+	public int pqr(){	
+		
 		int a=10;
 		int b =20;
 		int c = a+b;
